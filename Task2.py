@@ -4,8 +4,7 @@ def check_name(name: str) -> str:
     :param name: str
     :return: str
     """
-    check = 'Вячеслав'
-    return f'Привет, {check}' if name == check else 'Нет такого имени'
+    return 'Привет, Вячеслав' if name == 'Вячеслав' else 'Нет такого имени'
 
 
 if __name__ == '__main__':
