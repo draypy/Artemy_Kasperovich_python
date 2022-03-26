@@ -8,4 +8,5 @@ def check_name(name: str) -> str:
     return f'Привет, {check}' if name == check else 'Нет такого имени'
 
 
-print(check_name(input('Введите имя: ')))
+if __name__ == '__main__':
+    print(check_name(input('Введите имя: ')))

@@ -11,10 +11,11 @@ def bigger_than_seven(input_number: str) -> Optional[str]:
 
     try:
         verified = Decimal(input_number)
-        return 'Привет' if verified > 7 else None
+        return 'Привет' if verified > 7 else ' '
     except InvalidOperation:
         return 'Нужно вводить число'
 
 
-number = input()
-print(bigger_than_seven(number))
+if __name__ == '__main__':
+    number = input()
+    print(bigger_than_seven(number))
